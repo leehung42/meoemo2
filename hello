@@ -1,0 +1,16 @@
+import datetime
+
+def morning_greeting():
+    current_hour = datetime.datetime.now().hour
+
+    if current_hour < 12:
+        greeting = "Chào buổi sáng! Chúc bạn một ngày mới tràn đầy năng lượng!"
+    elif current_hour < 18:
+        greeting = "Buổi sáng tuyệt vời! Chúc bạn buổi chiều vui vẻ!"
+    else:
+        greeting = "Đã hết buổi sáng rồi, nhưng hãy tận hưởng buổi tối nhé!"
+
+    print(greeting)
+
+if __name__ == "__main__":
+    morning_greeting()
